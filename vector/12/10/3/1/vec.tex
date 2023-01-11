@@ -1,0 +1,66 @@
+\documentclass[journal,10pt,twocolumn]{article}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{VECTORS}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\section{12$^{th}$ Maths - EXERCISE-10.3}
+
+\begin{enumerate}
+\item Find the angle between two vectors $\overrightarrow{a}$ and $\overrightarrow {b} $ with magnitudes $\sqrt{3}$ and 2 respectively having $\overrightarrow {a}.\overrightarrow {b}=\sqrt{6}$.  
+
+\section{SOLUTION}
+Given points are
+\begin{align}
+\norm{a}&=\sqrt{3}\\
+\norm{b}&= 2\\
+\overrightarrow {a}.\overrightarrow {b}&=\sqrt{6}  
+\end{align}
+
+\begin{align}
+\overrightarrow {a}.\overrightarrow {b}&=\norm{a}\norm{b}cos\theta\\\
+\sqrt{6}&=\sqrt{3}\times 2 \times cos\theta\\
+cos\theta&=\frac{\sqrt{6}}{\sqrt{3}\times2}\\
+&=\frac{1}{\sqrt{2}}\\
+\theta&=\ang{45}
+\end{align}
+\end{enumerate}
+\end{document}
