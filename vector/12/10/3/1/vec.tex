@@ -1,4 +1,4 @@
-\documentclass[journal,10pt,twocolumn]{article}
+\documentclass[10pt]{article}
 \usepackage{graphicx}
 \usepackage[none]{hyphenat}
 \usepackage{graphicx}
@@ -32,8 +32,7 @@
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
-\let\vec\mathbf
-
+\let\vec\mathbf{}
 \begin{document}
 
 \begin{center}
@@ -45,18 +44,18 @@
 \section{12$^{th}$ Maths - EXERCISE-10.3}
 
 \begin{enumerate}
-\item Find the angle between two vectors $\overrightarrow{a}$ and $\overrightarrow {b} $ with magnitudes $\sqrt{3}$ and 2 respectively having $\overrightarrow {a}.\overrightarrow {b}=\sqrt{6}$.  
+\item Find the angle between two vectors $\overrightarrow{a}$ and $\overrightarrow {b} $ with magnitudes $\sqrt{3}$ and 2 respectively having $\overrightarrow {a}.\overrightarrow {b}=\sqrt{6}$.\\  
 
-\section{SOLUTION}
+\solution
 Given points are
 \begin{align}
-\norm{a}&=\sqrt{3}\\
-\norm{b}&= 2\\
-\overrightarrow {a}.\overrightarrow {b}&=\sqrt{6}  
+\norm{\vec{a}^\top\vec{a}}&=\sqrt{3}\\
+\norm{\vec{b}^\top\vec{b}}&= 2\\
+{\vec{a}^{\top}}.{\vec{b}}&=\sqrt{6}  
 \end{align}
 
 \begin{align}
-\overrightarrow {a}.\overrightarrow {b}&=\norm{a}\norm{b}cos\theta\\\
+ {\vec{a}^\top}.{\vec{b}} &=\sqrt{\vec{a}^\top {\vec{a}}}\sqrt{\vec{b}\top {\vec{b}}} cos\theta\\
 \sqrt{6}&=\sqrt{3}\times 2 \times cos\theta\\
 cos\theta&=\frac{\sqrt{6}}{\sqrt{3}\times2}\\
 &=\frac{1}{\sqrt{2}}\\
