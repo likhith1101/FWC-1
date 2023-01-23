@@ -1,47 +1,80 @@
-\documentclass[12pt]{article}
-\usepackage{graphicx}
-%\documentclass[journal,12pt,twocolumn]{IEEEtran}
-\usepackage[none]{hyphenat}
-\usepackage{graphicx}
-\usepackage{listings}
-\usepackage[english]{babel}
+\documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage{caption} 
 \usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{booktabs}
-\usepackage{commath}
-\usepackage{gensymb}
 \usepackage{array}
 \usepackage{amsmath}   % for having text in math mode
-\usepackage{listings}
-\lstset{
-  frame=single,
-  breaklines=true
-}
-  
-%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{mathtools}
+\usepackage{enumitem}
 \usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
 \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
-%
-
-
-%New macro definitions
-\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
-\providecommand{\abs}[1]{\left\vert#1\right\vert}
-\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
-\newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \let\vec\mathbf
-
-
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\let\vec\mathbf
 \begin{document}
 \begin{center}
-\title{\textbf{Properties of vectors}}
+\title{\textbf{}}
 \date{\vspace{-5ex}} %Not to print date automatically
 \maketitle
 \end{center}
 \setcounter{page}{1}
-\section{12$^{th}$ Maths - Exercise 10.4.2}
+\section{12$^{th}$ Maths - Chapter 10}
+\textbf{This is Problem-2 from Exercise 10.4}
+\begin{enumerate}
 
-\begin
+\item Find a unit vector  perpendicular to each of a vector $\bar{a}+\bar{b} \text{ and }\bar{a}-\bar{b}$ where  $\overrightarrow{a}=3\hat{i}+2\hat{j}+2\hat{k}\text{ and }\overrightarrow{b}=\hat{i}+2\hat{j}-2\hat{k}$
+\section{Solution}
+\begin{align} 
+(\vec{a}+\vec{b})^\top\vec{x}&=0 \\
+(\vec{a}-\vec{b})^\top\vec{x}&=0\\
+\myvec{(\vec{a}+\vec{b})^\top\\ (\vec{a}-\vec{b})^\top}\vec{x}&=0\\
+[(\vec{a}+\vec{b})(\vec{a}-\vec{b})]^\top\vec{x}&=0\\
+\end{align}
+\begin{align}
+\myvec{
+4&2\\
+4&0\\
+0&4
+}^\top \vec{x}&=0\\
+\myvec{
+2&1\\
+2&0\\
+0&2
+}^\top \vec{x}&=0\\
+\myvec{
+2&2&0\\
+1&0&2
+}\vec{x}&=0\\
+\xleftrightarrow[]{R_1=\frac{R_1}{2}}
+\myvec{
+1&1&0\\
+1&0&2
+}\vec{x}&=0\\
+\xleftrightarrow[]{R_2={R_1}-{R_2}}
+\myvec{
+1&1&0\\
+0&-1&2
+}\vec{x}&=0\\
+\xleftrightarrow[]{R_2=\frac{R_2}{-1}}
+\myvec{
+1&1&0\\
+0&1&-2
+}\vec{x}&=0\\
+\xleftrightarrow[]{R_1={R_1}-{R_2}}
+\myvec{
+1&0&2\\
+0&1&-2
+}\vec{x}&=0\\
+\end{align}
+\begin{align}
+\vec{x}_1+2\vec{x}_3&=0\\
+\vec{x}_1-2\vec{x}_3&=0\\
+\myvec{x1\\x2\\x3}&=\myvec{-2x3\\2x3\\x3}\\&=x3\myvec{-2\\2\\1}
+\end{align}   
+\end{enumerate} 
+\end{document}
