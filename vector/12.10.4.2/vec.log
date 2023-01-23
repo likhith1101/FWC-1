@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.13)  23 JAN 2023 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.13)  23 JAN 2023 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,8 +465,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 26.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1
 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
@@ -474,7 +475,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `vec.out' has not changed.
-(rerunfilecheck)             Checksum: 14EDF1E2F29DE99A6C5F8747EC0B454B;100.
+(rerunfilecheck)             Checksum: 2D402B57C30455F2EA955452FC11E14D;101.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
@@ -497,7 +498,7 @@ msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 
-Output written on vec.pdf (1 page, 110426 bytes).
+Output written on vec.pdf (1 page, 109955 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
